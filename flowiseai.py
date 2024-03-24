@@ -72,7 +72,7 @@ TEMPLATE = """\
 </head>
  
 <body>
-<iframe src="https://flowiseai.yunlab.synology.me/" width="100%" height="870px" frameborder="0"></iframe>
+<iframe src="https://flowiseai.yunlab.synology.me/" width="100%" height="700px" frameborder="0"></iframe>
 </body>
 </html>
 """
