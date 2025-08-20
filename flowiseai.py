@@ -7,7 +7,7 @@ from copy import copy
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-__version__ = '0.06'
+__version__ = '0.07'
 
 # This is the entry point for jupyter-server-proxy . The packaging metadata
 # tells it about this function. For details, see:
@@ -68,11 +68,21 @@ TEMPLATE = """\
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FlowiseAI</title>
+    <title>Flowise</title>
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/128289781?s=48&v=4">
+    
+    <style>
+        body {{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }}
+    </style>
 </head>
- 
 <body>
-<iframe src="https://flowiseai.yunlab.app/" width="100%" height="870px" frameborder="0"></iframe>
+    <iframe src="https://flowiseai.yunlab.app/" 
+            style="width: 100vw; height: 100vh; border: none;">
+    </iframe>
 </body>
 </html>
 """
